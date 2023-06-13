@@ -74,7 +74,7 @@ if web_apps == "Exploratory Data Analysis":
         st.write(df.describe())
       
       pick_chart = st.selectbox('Select a Distribution Chart', ("Histogram", "Density Plot", "Box Plot"))
-      # histogram
+      # histogram 
       if pick_chart == "Histogram":
         choose_color = st.color_picker('Pick a Color', "#69b3a2")
         choose_opacity = st.slider(
@@ -123,7 +123,7 @@ if web_apps == "Exploratory Data Analysis":
             mime="image/png"
           )
       
-      # BoxPlot
+      # Box Plot
       if pick_chart == "Box Plot":
         colors = st.color_picker('Pick a Color', "#6778D2")
         fig, ax = plt.subplots()
