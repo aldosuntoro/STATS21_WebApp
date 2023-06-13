@@ -4,7 +4,6 @@ from matplotlib import pyplot as plt
 import seaborn as sns
 import io
 import numpy as np
-from streamlit_pandas_profiling import st_profile_report
 
 web_apps = st.sidebar.selectbox("Select Web Apps",
                                 ("Exploratory Data Analysis", "Distributions"))
