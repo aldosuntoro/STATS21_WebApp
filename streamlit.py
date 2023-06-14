@@ -22,14 +22,14 @@ if web_apps == "Exploratory Data Analysis":
     if show_df:
       st.write(df)
     if show_shape:
-      #st.subheader('Shape of Data Frame')
-      #st.write('Num of Rows: ', df.shape[0])
-      #st.write('Num of Columns: ', df.shape[1])
-      #st.write('Size:', df.size)
-      col_info1, col_info2, col_info3 = st.columns(3)
-      col_info1.metric('Num of Rows', df.shape[0])
-      col_info2.metric('Num of Columns', df.shape[1])
-      col_info3.metric('Size', df.size)
+      st.subheader('Shape of Data Frame')
+      st.write('Num of Rows: ', df.shape[0])
+      st.write('Num of Columns: ', df.shape[1])
+      st.write('Size:', df.size)
+      #col_info1, col_info2, col_info3 = st.columns(3)
+      #col_info1.metric('Num of Rows', df.shape[0])
+      #col_info2.metric('Num of Columns', df.shape[1])
+      #col_info3.metric('Size', df.size)
     if show_info:
       buffer = io.StringIO()
       df.info(buf=buffer)
